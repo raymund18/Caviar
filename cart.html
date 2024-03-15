@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - CaviarStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                <a href="index.html"><img src="https://cdn.discordapp.com/attachments/954376679546036286/1157166286128824351/asdasdasd.png?ex=6556e695&is=65447195&hm=2e86dcce8d4fa4a64a728e5b885db3969250068da5f2f3343aee8f594b024267&" width="200px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="products.html">Products</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">Contact</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+              <img src="images/menu.png" onclick="menutoggle()" class="menu-icon">
+          </div>
+          
+       </div>
+       
+       
+<!--------------Cart Items details--------------->
+<div class="small-container cart-page">
+   
+   <table>
+       <tr>
+           <th>Product</th>
+           <th>Quantity</th>
+           <th>Subtotal</th>
+       </tr>
+
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/herloss.png">
+                   <div>
+                       <p>Herloss</p>
+                       <small>Price: ₱800.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>₱800.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/pinktape.png">
+                   <div>
+                       <p>Pinktape</p>
+                       <small>Price: ₱800.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>₱800.00</td>
+       </tr>
+       <tr>
+           <td>
+               <div class="cart-info">
+                   <img src="images/dawnfm.png">
+                   <div>
+                       <p>DawnFM</p>
+                       <small>Price: ₱800.00</small><br>
+                       <a href="">Remove</a>
+                   </div>
+               </div>
+           </td>
+           <td><input type="number" value="1"></td>
+           <td>₱800.00</td>
+       </tr>
+   </table>
+    
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₱2,400.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₱288.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₱2,688.00</td>
+            </tr>
+            
+        </table>
+    </div>
+    <div class="total-price">
+        <a href="#" class="btn">Proceed to checkout &#8594;</a>
+    </div>
+    
+</div>
+
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+            </div>
+            <div class="footer-col2">
+               <img src="https://cdn.discordapp.com/attachments/954376679546036286/1157165918225440798/logo_2.png?ex=6556e63e&is=6544713e&hm=6daa09eda7cde90d85196a3037a430cf25276d2283818dd62a435eb15bdf8068&">
+               <p>Unleash your inner style icon and embrace the streets with Caviar Streetwear – where every piece is a statement, and every street is your runway.</p>
+            </div>
+            <div class="footer-col3">
+            </div>
+            <div class="footer-col4">
+            </div>
+        </div>
+        <hr>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+    
+</script>
+
+
+
+</body>
+</html>
+
